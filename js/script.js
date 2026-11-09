@@ -9,6 +9,18 @@ const apodModalImage = document.getElementById('apodModalImage');
 const apodModalTitle = document.getElementById('apodModalTitle');
 const apodModalDate = document.getElementById('apodModalDate');
 const apodModalExplanation = document.getElementById('apodModalExplanation');
+const spaceFact = document.getElementById('spaceFact');
+
+// Keep a collection of space facts and show one at random when the page loads.
+const spaceFacts = [
+	'A day on Venus is longer than its year.',
+	'Sunlight takes about 8 minutes and 20 seconds to reach Earth.',
+	'Footprints on the Moon can last for millions of years because there is no wind or rain to wash them away.',
+	'Mars can have blue sunsets.',
+	'Saturn is less dense than water, so it would float in a large enough ocean.'
+];
+const randomFact = spaceFacts[Math.floor(Math.random() * spaceFacts.length)];
+spaceFact.textContent = randomFact;
 
 // NASA provides DEMO_KEY for trying the API. Replace it with your own key for regular use.
 const apiKey = 'DEMO_KEY';

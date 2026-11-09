@@ -16,16 +16,28 @@
     <div class="filters">
       <input type="date" id="startDate" />
       <input type="date" id="endDate" />
-      <button>Get Space Images</button>
+      <button id="getImagesButton" type="button">Get Space Images</button>
     </div>
 
-    <div id="gallery" class="gallery">
+    <div id="gallery" class="gallery" aria-live="polite">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
         <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>
       </div>
     </div>
   </div>
+
+  <dialog id="apodDialog" class="apod-dialog" aria-labelledby="apodModalTitle">
+    <div class="apod-modal-header">
+      <button id="closeApodDialog" class="apod-modal-close" type="button" aria-label="Close image details">&times;</button>
+    </div>
+    <img id="apodModalImage" class="apod-modal-image" alt="" />
+    <div class="apod-modal-content">
+      <h2 id="apodModalTitle"></h2>
+      <time id="apodModalDate"></time>
+      <p id="apodModalExplanation"></p>
+    </div>
+  </dialog>
 
   <script src="js/dateRange.js"></script>
   <script src="js/script.js"></script>

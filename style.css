@@ -152,6 +152,17 @@ button:hover {
   height: 200px;
   object-fit: cover;
   border-radius: 4px;
+  transition: transform 300ms ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-item img {
+    transition: none;
+  }
 }
 
 .gallery-item h2 {

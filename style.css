@@ -8,7 +8,7 @@
 /* Base page styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  background-color: #8d8b8b;
   padding: 20px;
 }
 
@@ -55,7 +55,7 @@ input[type="date"],
 button {
   font-family: Arial, sans-serif;
   font-weight: normal;
-  color: #666;
+  color: #5a5858;
   padding: 10px 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
